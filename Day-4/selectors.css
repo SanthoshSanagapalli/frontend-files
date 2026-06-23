@@ -1,0 +1,38 @@
+/* Universal selector */
+/* * {
+  color: green;
+} */
+
+/* Element selector */
+h1 {
+  color: blue;
+}
+
+p {
+  color: blueviolet;
+}
+
+/* Id selectors */
+#one {
+  color: red;
+}
+
+.ai {
+  color: aqua;
+}
+
+.ml {
+  color: chartreuse;
+}
+
+.cds {
+  color: darkgoldenrod;
+}
+
+#santhosh {
+  color: red;
+}
+
+#something {
+  color: rgb(203, 18, 74);
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <title>layout</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        border: 2px solid black;
+        margin: 5px;
+      }
+      .nav ul {
+        display: flex;
+        list-style-type: none;
+        color: white;
+        justify-content: flex-end;
+      }
+      li {
+        padding: 10px;
+      }
+      .one {
+        background-color: red;
+        height: 200px;
+        border: 2px solid black;
+      }
+
+      .two {
+        background-color: green;
+        height: 200px;
+        border: 2px solid black;
+      }
+      table {
+        margin: 5px;
+      }
+
+      .block {
+        display: flex;
+        width: 100%;
+        border: 2px solid black;
+      }
+
+      .three {
+        background-color: orange;
+        height: 200px;
+        width: 70%;
+        border: 2px solid black;
+      }
+
+      .four {
+        background-color: darkblue;
+        height: 200px;
+        width: 30%;
+        border: 2px solid black;
+      }
+
+      .five {
+        background-color: aqua;
+        height: 200px;
+        border: 2px solid black;
+      }
+
+      .six {
+        background-color: brown;
+        height: 200px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Certifications</li>
+          <li>FeedBack</li>
+        </ul>
+      </div>
+    </div>
+    <div class="two">
+      <form>
+        <table border="2" style="border-collapse: collapse">
+          <tr>
+            <th colspan="2">Student Registration</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" /></td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td><input type="number" name="age" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td>Mobile</td>
+            <td><input type="tel" name="mobile" /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Languages Known</td>
+            <td>
+              <input type="checkbox" name="lang" value="english" />
+              <label for="english">English</label>
+              <input type="checkbox" name="lang" value="hindi" />
+              <label for="hindi">Hindi</label>
+              <input type="checkbox" name="lang" value="telugu" />
+              <label for="telugu">Telugu</label>
+            </td>
+          </tr>
+          <tr>
+            <td>DOB</td>
+            <td><input type="date" name="dob" /></td>
+          </tr>
+
+          <tr>
+            <td><input type="Reset" /></td>
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="block">
+      <div class="three"></div>
+      <div class="four"></div>
+    </div>
+    <div class="five"></div>
+    <div class="six"></div>
+  </body>
+</html>

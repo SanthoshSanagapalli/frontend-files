@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Positions</title>
+    <style>
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+      }
+      body {
+        color: white;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image {
+        background-image: url(assests/mountains.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 600px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .child1 {
+        background-color: aqua;
+        z-index: 0;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .child2 {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      .child3 {
+        background-color: brown;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      .child4 {
+        background-color: chocolate;
+        height: 100px;
+        width: 100 px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      .child5 {
+        background-color: deeppink;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <div class="child1">Top left</div>
+      <div class="child2">Bottom left</div>
+      <div class="child3">Top right</div>
+      <div class="child4">Bottom right</div>
+      <div class="child5">center</div>
+    </div>
+  </body>
+</html>
