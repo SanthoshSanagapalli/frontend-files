@@ -1,0 +1,191 @@
+body {
+  margin: 0px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar > h3 {
+  font-size: 19px;
+  font-family: "Roboto";
+  padding-left: 25px;
+  font-weight: lighter;
+}
+.items > ul {
+  display: flex;
+}
+
+.navbar .items > ul > li {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.bannerimg {
+  background-image: url("assests/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.bannerimg > h3 {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  font-size: 30px;
+  color: rgb(178, 193, 176);
+}
+
+.aboutsec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.aboutsec img {
+  height: 700px;
+  margin: 0;
+  max-width: 45%;
+  object-fit: cover;
+}
+.about-content {
+  text-align: left;
+  margin: 50px;
+  width: 500px;
+}
+
+.about-content > h1 {
+  font-size: 35px;
+  font-family: monospace;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#section-tag {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 35px;
+}
+
+#para1 {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#para1 > #span2 {
+  background-color: lightgray;
+}
+
+#para2 {
+  color: gray;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.menusection {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+#menuimg {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  opacity: 0.85;
+}
+.menu-heading {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#menu-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-family: "Times New Roman", serif;
+}
+
+.menu-content h4 {
+  font-size: 28px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", serif;
+}
+
+.menu-content p {
+  color: #757575;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-family: serif;
+}
+
+.contact-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-sec > h1 {
+  text-align: left;
+  margin-left: 40px;
+}
+#service {
+  color: aqua;
+  font-size: 25px;
+}
+.contact-sec > p {
+  margin-left: 40px;
+}
+input {
+  height: 40px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+  border: transparent;
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  margin: 20px;
+  margin-left: 40px;
+}
+
+#service {
+  color: aqua;
+  font: size 25px;
+}
+
+.footersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  height: 100px;
+}
+
+#footer {
+  text-decoration: underline;
+}

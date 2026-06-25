@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 3px solid black;
+}
+
+.section1 {
+  background-color: blue;
+  height: 200px;
+}
+
+.section2 {
+  background-color: green;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 > .child1 {
+  background-color: yellow;
+  height: 350px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section2 > .child2 {
+  background-color: pink;
+  width: 30%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 > .child2 > .subchild1 {
+  background-color: orange;
+  height: 40%;
+  width: 400px;
+}
+
+.section2 > .child2 > .subchild2 {
+  background-color: aquamarine;
+  height: 40%;
+  width: 400px;
+}
+
+.section2 > .child1 > .c1sub1 {
+  background-color: red;
+  height: 300px;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section2 > .child1 > .c1sub2 {
+  background-color: blueviolet;
+  height: 300px;
+  width: 280px;
+  gap: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 > .child1 > .c1sub3 {
+  background-color: brown;
+  height: 300px;
+  width: 280px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 > .child1 > .c1sub1 > .c1s1c1 {
+  background-color: yellow;
+  height: 250px;
+  width: 120px;
+}
+
+.section2 > .child1 > .c1sub1 > .c1s1c2 {
+  background-color: yellow;
+  height: 250px;
+  width: 120px;
+}
+
+.section2 > .child1 > .c1sub2 > .c1s2c6 {
+  background-color: aqua;
+  height: 70px;
+  width: 120px;
+}
+
+.section2 > .child1 > .c1sub2 > .c1s2c1 {
+  background-color: aqua;
+  height: 70px;
+  width: 120px;
+}
+.section2 > .child1 > .c1sub2 > .c1s2c2 {
+  background-color: aqua;
+  height: 70px;
+  width: 120px;
+}
+.section2 > .child1 > .c1sub2 > .c1s2c3 {
+  background-color: aqua;
+  height: 70px;
+  width: 120px;
+}
+.section2 > .child1 > .c1sub2 > .c1s2c4 {
+  background-color: aqua;
+  height: 70px;
+  width: 120px;
+}
+.section2 > .child1 > .c1sub2 > .c1s2c5 {
+  background-color: aqua;
+  height: 70px;
+  width: 120px;
+}
+
+.section2 > .child1 > .c1sub3 > .c1s3c1 {
+  background-color: yellow;
+  width: 250px;
+  height: 80px;
+}
+
+.section2 > .child1 > .c1sub3 > .c1s3c2 {
+  background-color: yellow;
+  width: 250px;
+  height: 80px;
+}
+
+.section2 > .child1 > .c1sub3 > .c1s3c3 {
+  background-color: yellow;
+  width: 250px;
+  height: 80px;
+}
