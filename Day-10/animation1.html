@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 50px;
+      }
+      img {
+        width: 200px;
+        height: auto;
+      }
+
+      #car {
+        margin-top: 10px;
+        animation-name: startCar;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes startCar {
+        0% {
+          transform: translateX(0px) scale(1);
+        }
+        50% {
+          transform: translateX(1300px) scale(2);
+        }
+        100% {
+          transform: translateX(0px) scale(0.5);
+        }
+      }
+
+      #bike {
+        animation-name: startBike;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-fill-mode: backwards;
+      }
+
+      @keyframes startBike {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1300px);
+        }
+      }
+
+      #airplane {
+        animation-name: airplane;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes airplane {
+        from {
+          transform: translateX(0px) rotate(0deg);
+        }
+        to {
+          transform: translateX(1300px) rotate(360deg);
+        }
+      }
+
+      #truck {
+        animation-name: truck;
+        animation-duration: 10s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+      }
+
+      @keyframes truck {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1300px);
+        }
+      }
+
+      #ship {
+        animation-name: ship;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+
+      @keyframes ship {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1300px);
+        }
+      }
+    </style>
+    <title>Animation</title>
+  </head>
+  <body>
+    <img id="car" src="assests/car.png" alt="error" /> <br />
+    <br />
+    <img id="bike" src="assests/Bike.png" alt="error" /> <br />
+    <br />
+    <img id="airplane" src="assests/airplane.png" alt="error" /> <br />
+    <br />
+    <img id="truck" src="assests/truck.png" alt="error" /> <br />
+    <br />
+    <img id="ship" src="assests/ship.png" alt="error" />
+  </body>
+</html>
