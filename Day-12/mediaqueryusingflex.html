@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries Task</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .content {
+        /* background-color: plum; */
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        padding: 30px;
+      }
+
+      @media (max-width: 500px) {
+        .content {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+
+      @media (max-width: 300px) {
+        .content {
+          height: 100vh;
+          flex-direction: column;
+        }
+      }
+
+      .content > div {
+        height: 250px;
+        width: 250px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="card1"></div>
+      <div class="card2"></div>
+      <div class="card3"></div>
+      <div class="card4"></div>
+    </div>
+  </body>
+</html>

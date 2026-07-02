@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .navbar {
+        background-color: lightgreen;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @media (min-width: 500px) and (max-width: 700px) {
+        .navbar {
+          width: 100%;
+          flex-direction: column;
+        }
+        .items {
+          width: 100%;
+          text-align: center;
+        }
+        .items > ul {
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+        }
+      }
+      .logo {
+        color: white;
+        font-size: 45px;
+        margin-left: 20px;
+      }
+      .items > ul {
+        display: flex;
+        gap: 10px;
+      }
+      li {
+        list-style-type: none;
+        background-color: grey;
+        padding: 8px 12px;
+        margin: 10px;
+        color: white;
+      }
+      li:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">Logo</h1>
+      <div class="items">
+        <ul>
+          <li>Home</li>
+          <li>about</li>
+          <li>Carrer</li>
+          <li>Help</li>
+          <li>More</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
