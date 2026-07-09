@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <input type="number" id="val1" placeholder="Enter value 1" /> <br />
+    <br />
+    <input type="number" id="val2" placeholder="Enter value 2" /> <br />
+    <br />
+    <input type="text" id="ope" placeholder="Enter only +,-,*,/" />
+    <br />
+    <br />
+    <button onclick="calci()">Get Answer</button>
+    <h1 id="res">Result</h1>
+
+    <script>
+      let val1El = document.getElementById("val1");
+      let val2El = document.getElementById("val2");
+      let opeEl = document.getElementById("ope");
+      let resEl = document.getElementById("res");
+      let result = 0;
+      function calci() {
+        let a = parseInt(val1El.value);
+        let b = parseInt(val2El.value);
+        let ope = opeEl.value;
+        if (ope == "+") {
+          result = a + b;
+        } else if (ope == "-") {
+          result = a - b;
+        } else if (ope == "*") {
+          result = a * b;
+        } else if (ope == "/") {
+          if (b == 0) {
+            result = "can't divide a number with Zero";
+          } else {
+            result = a / b;
+          }
+        }
+        resEl.innerText = "Result: " + result;
+      }
+    </script>
+  </body>
+</html>

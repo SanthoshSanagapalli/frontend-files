@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Hello</h1>
+    <button onclick="changeDark()">Dark</button>
+    <button onclick="changeLight()">Light</button>
+
+    <!-- <button onclick="changeBGBlue()">Blue</button>
+    <button onclick="changeBGYellow()">Pink</button>
+    <button onclick="changeBGGreen()">Green</button> -->
+
+    <script>
+      let headingEl = document.getElementById("heading");
+      function changeDark() {
+        document.body.style.backgroundColor = "black";
+        headingEl.style.color = "white";
+      }
+
+      function changeLight() {
+        document.body.style.backgroundColor = "white";
+        headingEl.style.color = "black";
+      }
+
+      //   function changeBGBlue() {
+      //     document.body.style.backgroundColor = "Blue";
+      //   }
+      //   function changeBGYellow() {
+      //     document.body.style.backgroundColor = "pink";
+      //   }
+      //   function changeBGGreen() {
+      //     document.body.style.backgroundColor = "green";
+      //   }
+    </script>
+  </body>
+</html>
