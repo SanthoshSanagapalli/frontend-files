@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .navbar {
+        background-color: rgb(224, 18, 35);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 400px) {
+        .navbar {
+          width: 100%;
+          flex-direction: column;
+          height: 50vh;
+        }
+        .items {
+          width: 100%;
+          text-align: center;
+        }
+        .items > ul {
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+        }
+        .hero-section .image-division img {
+          width: 3000px;
+          height: 300;
+          margin-top: 30px;
+        }
+      }
+      .logo {
+        color: white;
+        font-size: 45px;
+        margin-left: 20px;
+      }
+      .items > ul {
+        display: flex;
+        gap: 10px;
+      }
+      li {
+        list-style-type: none;
+        background-color: grey;
+        padding: 8px 12px;
+        margin: 10px;
+        color: white;
+      }
+      li:hover {
+        background-color: black;
+      }
+
+      .hero-section {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+      }
+
+      .hero-section .image-division img {
+        width: 600px;
+        height: 600px;
+        margin: 20px;
+      }
+
+      .hero-section > .text-division {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+        padding: 15px;
+      }
+
+      .hero-section > .text-division > h1 {
+        align-self: center;
+        text-transform: uppercase;
+        color: green;
+        font-size: 50px;
+        font-weight: 900;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .hero-section > .text-division > p {
+        text-align: justify;
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">Logo</h1>
+      <div class="items">
+        <ul>
+          <li>Home</li>
+          <li>about</li>
+          <li>Carrer</li>
+          <li>Services</li>
+          <li>Help</li>
+          <li>More</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="image-division">
+        <img class="img" src="assests/nature.jpg" alt="nature" />
+      </div>
+      <div class="text-division">
+        <h1>Nature</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          repudiandae est ut perspiciatis magnam unde enim temporibus id
+          aspernatur, nam sint ab natus quae iure. Quas possimus dicta impedit
+          recusandae.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
