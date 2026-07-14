@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        margin-top: 50px;
+      }
+      .show {
+        visibility: hidden;
+      }
+      #image {
+        width: 150px;
+        animation: jump 5s ease-in-out infinite;
+      }
+      @keyframes jump {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img id="image" src="jerry.png" alt="error" width="400" />
+    <br />
+    <div>
+      <button onclick="show()">show/Hide</button>
+    </div>
+
+    <button onclick="changeTheme()">ChangeTheme</button>
+    <script>
+      let b = document.getElementById("image");
+      function show() {
+        b.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Basic calculator</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        flex-direction: column;
+      }
+      .result {
+        background-color: white;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 25px;
+        width: 400px;
+      }
+      .box {
+        padding: 30px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      input[type="text"] {
+        width: 80%;
+        height: 20%;
+        margin: 10px;
+        font-size: 30px;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+      }
+      .buttons > button {
+        background-color: brown;
+        font-size: 20px;
+        gap: 10px;
+        margin: 10px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="result">
+      <h1 id="res">Enter a and b values to get the result</h1>
+    </div>
+    <div class="box">
+      <input type="text" id="val1" placeholder="Enter a value" /> <br />
+
+      <input type="text" id="val2" placeholder="Enter a value" /> <br />
+
+      <div class="buttons">
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+        <button onclick="reset()">reset</button>
+        <button onclick="power()">**</button>
+      </div>
+    </div>
+    <script>
+      function addition() {
+        let num1 = document.getElementById("val1").value;
+        let num2 = document.getElementById("val2").value;
+        let output = document.getElementById("res");
+        let res = Number(num1) + Number(num2);
+        output.innerText = res;
+      }
+      function subtraction() {
+        let num1 = document.getElementById("val1").value;
+        let num2 = document.getElementById("val2").value;
+        let output = document.getElementById("res");
+        let res = Number(num1) - Number(num2);
+        output.innerText = res;
+      }
+      function multiplication() {
+        let num1 = document.getElementById("val1").value;
+        let num2 = document.getElementById("val2").value;
+        let output = document.getElementById("res");
+        let res = Number(num1) * Number(num2);
+        output.innerText = res;
+      }
+      function power() {
+        let num1 = document.getElementById("val1").value;
+        let num2 = document.getElementById("val2").value;
+        let output = document.getElementById("res");
+        let res = Number(num1) ** Number(num2);
+        output.innerText = res;
+      }
+      function reset() {
+        let num1 = document.getElementById("val1") || "Enter a value";
+        let num2 = document.getElementById("val2") || "Enter b value";
+        document.getElementById("res").innerText = res;
+      }
+    </script>
+  </body>
+</html>

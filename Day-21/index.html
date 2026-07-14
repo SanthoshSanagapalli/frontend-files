@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listeners</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      button {
+        align-self: center;
+        height: 10vh;
+        width: 20vw;
+        background-color: blueviolet;
+        border-radius: 10px;
+        border-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">click Me 2</button>
+    <script>
+      let b = document.getElementById("btn");
+      b.addEventListener("click", function () {
+        let ele = document.body;
+        ele.style.backgroundColor = "red";
+      });
+      b.addEventListener("dblclick", function () {
+        let ele = document.body;
+        ele.style.backgroundColor = "orange";
+      });
+
+      b.addEventListener("mouseenter", () => {
+        let ele = document.body;
+        ele.style.backgroundColor = "yellow";
+      });
+      b.addEventListener("mouseleave", () => {
+        let ele = document.body;
+        ele.style.backgroundColor = "aqua";
+      });
+    </script>
+  </body>
+</html>
