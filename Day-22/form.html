@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listeners perform on forms</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        gap: 10px;
+      }
+      h1 {
+        border: 4px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="data" type="text" placeholder="Enter something" />
+    <br />
+    <h1 id="display"></h1>
+    <h1 id="ch"></h1>
+    <script>
+      let ele = document.getElementById("data");
+
+      ele.addEventListener("input", (e) => {
+        let dis = document.getElementById("display");
+        dis.innerHTML = ele.value;
+      });
+      ele.addEventListener("change", (e) => {
+        let dis = document.getElementById("ch");
+        dis.innerHTML = ele.value;
+      });
+      ele.addEventListener("focus", (e) => {
+        document.body.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

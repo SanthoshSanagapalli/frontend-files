@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Element Using JS</title>
+    <style>
+      #list-items {
+        background-color: blue;
+        width: 50vw;
+      }
+      #list-items > li {
+        color: white;
+        font-size: 30px;
+        list-style-type: decimal;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="data" />
+    <button onclick="addEle()">ADD</button>
+    <ul id="list-items">
+      <li id="l1">Permenant</li>
+    </ul>
+    <script>
+      function addEle() {
+        let btn = document.getElementById("button");
+        let d = document.getElementById("data").value;
+        btn.innerText = "X";
+        let item = document.getElementById("list-items");
+        let l = document.createElement("li");
+        item.appendChild(l);
+      }
+    </script>
+  </body>
+</html>
